@@ -6,7 +6,7 @@ module Font
           def fa_icon_code(string)
             assert_type string, :String, :string
             if fa_icon_map[string.value]
-              Sass::Script::String.new(fa_icon_map[string.value], :string)
+              ::Sass::Script::String.new(fa_icon_map[string.value], :string)
             else
               raise ArgumentError.new("#{string.inspect} is not a valid Font Awesome icon")
             end
