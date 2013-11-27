@@ -10,7 +10,7 @@ module Font
             raise ArgumentError.new("#{string.inspect} is not a valid Font Awesome icon")
           end
         end
-        declare :fa_icon_code, [:string]
+        ::Sass::Script::Functions.declare :fa_icon_code, [:string]
 
         private
 
